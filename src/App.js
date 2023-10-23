@@ -3,8 +3,14 @@ import './App.css';
 function App() {
   return (
     <div className = "card">
-
-      <span className = "symbol">&#9733;</span>
+      
+      <span className="symbol-container">
+        <span className = "symbol">
+          <div>
+            &#9733;
+          </div>
+        </span>
+      </span>
 
       <div className= "card-text">
         <h1>How did we do?</h1>
