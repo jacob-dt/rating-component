@@ -47,10 +47,28 @@ body {
 }
 
 .ratings {
-  outline: auto;
   display: flex;
   list-style-type: none;
+  padding-left: 0;
+  align-items: center;
+  justify-content: space-evenly;
 }
+
+.ratings button {
+  border: none;
+  padding: 20px;
+  border-radius: 100px;
+  background-color:  hsl(216, 12%, 54%);
+}
+
+.submit {
+  background-color: hsl(25, 97%, 53%);
+  height: 55px;
+  border-radius: 40px;
+  border: none;
+}
+
+
 
 
 
