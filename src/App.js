@@ -20,18 +20,23 @@ function App() {
         </p>
       </div>
 
-      <div className="buttons">
+      <div className="ratings-buttons">
         <ul className="ratings">
-          <li><button>1</button></li>
-          <li><button>2</button></li>
-          <li><button>3</button></li>
-          <li><button>4</button></li>
-          <li><button>5</button></li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
         </ul>
-        <button className="submit" type='submit'>Sumbit</button>
       </div>
 
-    </div>
+      <div className="submit-button">
+        <button className="submit" type='submit'>SUBMIT</button>
+      </div>
+
+      </div>
+
+
   )
 }
 

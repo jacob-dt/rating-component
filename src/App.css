@@ -17,7 +17,7 @@ body {
   justify-content: center;
   border-radius: 30px;
   padding: 30px;
-  background-image: radial-gradient(#3e3b4646 5.66%, #0000004b 94.35%);
+  background-image: linear-gradient(#00000046 5.66%, #1c1b3a4b 94.35%);
 } 
 
 .symbol{
@@ -27,7 +27,7 @@ body {
   justify-content: center;
   background-color: hsl(213, 19%, 18%);
   width: 40px;
-  height: 38px;
+  height: 40px;
   border-radius: 100px;
 }
 
@@ -41,31 +41,69 @@ body {
   color: hsl(217, 12%, 63%);
 }
 
-.buttons {
+.ratings {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ratings li {
+  font-size: large;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(216, 12%, 54%);
+  height: 55px;
+  width: 55px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.ratings li:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+}
+
+.card-text {
   display: flex;
   flex-direction: column;
 }
-
-.ratings {
-  display: flex;
-  list-style-type: none;
-  padding-left: 0;
-  align-items: center;
-  justify-content: space-evenly;
+.card-text h1 {
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
-.ratings button {
-  border: none;
-  padding: 20px;
-  border-radius: 100px;
-  background-color:  hsl(216, 12%, 54%);
+.card-text p {
+  margin-top: 10px;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .submit {
   background-color: hsl(25, 97%, 53%);
-  height: 55px;
-  border-radius: 40px;
+  color: hsl(0, 0%, 100%);
+  width: 500px;
+  height: 45px;
+  border-radius: 100px;
   border: none;
+  margin-top: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
 }
 
 
